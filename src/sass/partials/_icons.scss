@@ -1,0 +1,198 @@
+// Switch Icon
+.switch {
+  position: absolute;
+  right: 100px;
+}
+
+.switch a:hover {
+  color: $green;
+  cursor: pointer;
+}
+
+.switch a {
+  color: $orange;
+}
+
+// Knowledge Icons
+
+.icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 69%;
+  padding: 0px 0px 20px 0px;
+  font-size: 28px;
+}
+
+// Service Icons
+
+.service-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: $white;
+  padding-top: 20px;
+}
+
+.digital-marketing,
+.web-development,
+.web-design,
+.strategy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  margin-top: 40px;
+  height: 25px;
+  width: 25px;
+  background-color: $blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover {
+  background-color: $blue;
+  cursor: pointer;
+}
+
+// Icons on slider
+
+.FaHtml5 {
+  color: $black;
+  height: 40px;
+}
+
+.fa-css3-alt {
+  color: $red;
+  height: 40px;
+}
+
+.fa-js {
+  color: $yellow;
+  height: 40px;
+}
+
+.fa-react {
+  color: $blue;
+}
+
+.fa-sass {
+  color: $purple;
+}
+.fa-github {
+  color: $black;
+}
+
+.fa-bootstrap {
+  color: $purple;
+}
+
+.fa-node {
+  color: $blue;
+}
+
+.fa-aws {
+  color: $red;
+}
+
+.fa-node-js {
+  color: $purple;
+}
+
+.fa-wix {
+  color: $blue;
+}
+
+.text-icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 80px;
+  width: 30%;
+  align-content: center;
+}
+
+#ps {
+  padding-right: 10px;
+  color: $photoshop;
+}
+
+#ai {
+  color: $illustrator;
+}
+// Social Media Icons
+
+// Icons on hero banner
+
+.icons-wrapper *:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+#html5,
+#hotjar {
+  color: $red;
+}
+
+#java {
+  color: $yellow;
+}
+
+#sass,
+#bootstrap,
+#adobexed {
+  color: $purple;
+}
+
+#react {
+  color: $blue;
+}
+
+#adobeps {
+  color: $darkblue;
+}
+
+#adobeillu {
+  color: $orange;
+}
+
+#mywix {
+  color: $blue;
+}
+
+#mywp {
+  color: $darkblue;
+}
+
+#mymamp {
+  color: $grey;
+}
+
+#myshopify {
+  color: $green;
+}

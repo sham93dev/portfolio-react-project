@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $black;
+  padding: 60px;
+  text-align: center;
+}
+
+.footer-link a {
+  padding: 20px;
+  text-decoration: none;
+  color: $white;
+}
+
+.footer-link a:hover {
+  color: $blue;
+}
+
+.copyright {
+  color: $white;
+  margin-top: 20px;
+  font-family: $font-secondary;
+  font-size: 20px;
+}
