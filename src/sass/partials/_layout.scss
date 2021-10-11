@@ -33,6 +33,7 @@
   font-size: 35px;
 }
 .information p {
+  margin-top: 20px;
   font-size: 27px;
   font-family: $font-primary;
 }
@@ -309,20 +310,23 @@ input[type="text"] {
 
 .multi-section-wrapper {
   display: flex;
-  flex-direction: row;
-  min-height: 60vh;
+  flex-direction: row-reverse;
+  min-height: 80vh;
 }
 
 .about-section {
   background-color: $white;
   min-height: 50vh;
   flex: 1;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-attachment: fixed;
 }
 
 .about-section-media {
   background-color: $blue;
-  min-height: 52vh;
-  flex: 2;
+
+  flex: 1;
 }
 
 .react-multi-carousel-track {
@@ -346,4 +350,55 @@ ul.react-multi-carousel-dot-list {
 
 .carousel-item-padding-40-px {
   flex: 2 !important;
+}
+
+// Clients
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.clients-section h3 {
+  font-size: 90px;
+  margin-top: 125px;
+  margin-left: 60px;
+  font-family: $font-secondary;
+}
+
+.clients-section h2 {
+  font-size: 120px;
+  margin-left: 60px;
+}
+
+.clients-small-box {
+  background-color: $orange;
+  height: 140px;
+  width: 60%;
+  position: absolute;
+  top: 83%;
+  bottom: 0;
+  z-index: -2;
+}
+
+.clients-big-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+  height: 500px;
+  width: 96%;
+  margin: 40px;
+  z-index: -1;
+  position: absolute;
+  top: 98%;
+}
+
+.clients-big-box p {
+  color: $white;
+  margin-top: 6%;
+}
+
+.clients-images {
 }
