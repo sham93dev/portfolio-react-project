@@ -70,17 +70,10 @@ function Services() {
         </div>
         <div className="description">
           <span>
-            <p>
-              {" "}
-              As a student studying Front end Development at Noroff, I have acquired a lot of knowledge in front end development and with a bachelor's degree in marketing, I can help you with digital marketing, web development, design and marketing
-              strategy.
-            </p>
+            <p>As a junior frontend developert I have acquired a lot of knowledge in front end development and with a bachelor's degree in marketing, I can help you with digital marketing, web development, design and marketing strategy.</p>
           </span>{" "}
           <span id="hide">
-            <p>
-              I have almost finished my studies and am looking for a relevant job position and am hungry to get into the industry. As a Junior developer, I am a bit fresh in the game but develop my skills every day and have come a long way since I
-              started learning HTML, CSS and JavaSrcipt.
-            </p>
+            <p>At the moment I am looking for a relevant job position and am hungry to get into the industry. As a Junior developer, I am a bit fresh in the game but develop my skills every day and have come a long way since I started in 2019.</p>
           </span>
         </div>
         <div className="container">
