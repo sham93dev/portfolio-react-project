@@ -8,6 +8,7 @@
 
   .presentation {
     flex: 0;
+    position: relative;
   }
 
   .wrapper {
@@ -15,7 +16,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    height: 500px;
+    height: 414px;
     position: relative;
   }
 
@@ -26,34 +27,37 @@
   }
 
   .information h1 {
-    font-size: 15px;
-    color: $white;
-  }
-
-  .information p:nth-child(1) {
-    display: none;
+    font-size: 1.5rem !important;
+    color: $black;
   }
 
   .information p {
     font-family: $font-secondary;
-    font-size: 13px;
-    color: $white;
+    font-size: 0.6rem !important;
+    color: $black;
   }
 
   .information h2 {
-    margin-top: -5px;
-    font-size: 11px;
+    font-size: 0.8rem !important;
     color: $orange;
   }
 
   .information {
-    padding: 30px;
-    margin: 50px;
     justify-content: center;
     position: absolute;
     border-radius: 20px;
-    top: 15%;
-    right: 20%;
+    top: 340px;
+    bottom: 0;
+    right: 85px;
+    left: -129px;
+  }
+
+  .web-icons {
+    font-size: 9px;
+  }
+
+  .portfolio-btn {
+    display: none;
   }
 
   #hide5 {
@@ -116,6 +120,40 @@
     margin-bottom: 0px;
   }
 
+  // Clients
+
+  .clients-section h3 {
+    font-size: 1.3rem;
+    margin-top: 1px;
+    margin-left: 8px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .clients-section h2 {
+    font-size: 2.5rem;
+    margin-left: 8px;
+  }
+
+  .clients-small-box {
+    height: 114px;
+  }
+
+  .clients-big-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+    height: 246px;
+    width: 100%;
+    z-index: -1;
+    top: 98%;
+  }
+
+  .clients-images img {
+    height: 51px;
+  }
+
   #hide {
     display: none;
   }
@@ -169,6 +207,13 @@
   .slider {
     display: grid;
     height: auto;
+  }
+
+  .custom-shape-divider-bottom-1611286464 svg {
+    position: relative;
+    display: block;
+    width: calc(185% + 1.3px);
+    height: 77px;
   }
 
   .projects-wrapper img {
@@ -256,63 +301,9 @@
     grid-template-rows: 1fr;
   }
 
-  .apps {
-    font-size: 10px !important;
-    gap: 20px;
-  }
-  .apps img {
-    height: 60px;
-    padding: 12px;
-  }
-
   .contact {
     display: flex;
     flex-direction: column;
-  }
-
-  .ranked,
-  .fa-star {
-    font-size: 6px;
-    margin-top: 20px;
-  }
-  .about-me {
-    background-color: $blue;
-    padding-bottom: 90px;
-  }
-  .about-me img {
-    padding: 20px;
-  }
-
-  .about-me p {
-    font-size: 17px;
-    margin: 20px;
-    text-align: center;
-    color: $white;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-  }
-
-  .contact-form h2 {
-    font-size: 20px;
-  }
-
-  .input-box {
-    height: 20%;
-  }
-  .input-box span {
-    margin-left: 10px !important;
-    height: 20%;
-    font-size: 12px !important;
-    align-items: center;
-  }
-
-  input[type="text"] {
-    height: 34px;
   }
 
   .footer {
@@ -337,16 +328,6 @@
     margin-top: 20px;
     font-family: $font-secondary;
     font-size: 20px;
-  }
-
-  #submit-btn {
-    width: 100px;
-    padding: 10px;
-    font-size: 13px;
-  }
-
-  .rankings {
-    margin-top: 8px;
   }
 
   .custom-shape-divider-bottom-1611286464 .shape-fill {
@@ -415,5 +396,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+  }
+
+  .react-multi-carousel-dot-list {
+    margin: 47px !important;
   }
 }
