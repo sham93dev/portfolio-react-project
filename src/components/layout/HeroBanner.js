@@ -16,11 +16,11 @@ function HeroBanner() {
               <p>Junior Developer looking for a job. In the meantime I work on my own projects that I upload to the site. </p>
 
               <div className="buttons">
-                <a href="#about" className="contact-btn">
+                <a href="#footer" className="contact-btn">
                   Contact
                 </a>
-                <a href="#about" className="portfolio-btn">
-                  Contact
+                <a href="#projects" className="portfolio-btn">
+                  Portfolio
                 </a>
               </div>
             </div>
