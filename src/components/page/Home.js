@@ -4,6 +4,8 @@ import MultiSection from "../layout/MultiSection";
 import Navbar from "../layout/Navbar";
 import Projects from "../layout/Projects";
 import Services from "../layout/Services";
+import Clients from "../layout/Clients";
+import Footer from "../layout/Footer";
 
 function Home() {
   return (
@@ -11,8 +13,10 @@ function Home() {
       <Navbar />
       <HeroBanner />
       <Projects />
-      <Services />
+      <Clients />
       <MultiSection />
+      <Services />
+      <Footer />
     </div>
   );
 }

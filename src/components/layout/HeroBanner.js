@@ -19,6 +19,9 @@ function HeroBanner() {
                 <a href="#about" className="contact-btn">
                   Contact
                 </a>
+                <a href="#about" className="portfolio-btn">
+                  Contact
+                </a>
               </div>
             </div>
           </div>

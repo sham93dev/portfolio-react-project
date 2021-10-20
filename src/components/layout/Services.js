@@ -89,7 +89,7 @@ function Services() {
             <span className="animated-blinker">&nbsp;</span>
           </p>
           <div className="cv-btn-wrapper">
-            <a href="https://www.dropbox.com/s/2ulg6qz19flvwl3/Shamil%20Babujev%20CV%20.pdf?dl=1" target="_blank" rel="noopener noreferrer" className="cv-btn">
+            <a href="https://www.dropbox.com/s/06qq55gx3tfdvgz/Shamil_Babujev_CV.pdf?dl=1" target="_blank" rel="noopener noreferrer" className="cv-btn">
               Download CV
             </a>
           </div>

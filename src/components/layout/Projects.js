@@ -43,92 +43,84 @@ function Projects() {
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
           dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
         >
-          <div>
-            {" "}
-            <div class="slider">
-              <div class="slider-media">
-                <img src="./assets/img/kitchen.jpeg" alt="Kurban`s Kitchen" />
-                <div class="img-overlay">
-                  <a href="https://babuevs.no/kitchen/index.html" target="_blank" rel="noopener noreferrer" class="visit-btn">
-                    Enter the page
-                  </a>
-                </div>
+          <div class="slider">
+            <div class="slider-media">
+              <img src="./assets/img/kitchen.jpeg" alt="Kurban`s Kitchen" />
+              <div class="img-overlay">
+                <a href="https://babuevs.no/kitchen/index.html" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                  Enter the page
+                </a>
               </div>
-              <div class="slider-details">
-                <h4>Kurban`s Kitchen</h4>
+            </div>
+            <div class="slider-details">
+              <h4>Kurban`s Kitchen</h4>
+            </div>
+            <div class="title">
+              <i class="html-icon fab fa-html5 fa-2x"></i>
+              <i class="css-icon fab fa-css3-alt fa-2x"></i>
+              <i class="sass-icon fab fa-sass fa-2x"></i>
+              <i class="js-icon fab fa-js fa-2x"></i>
+              <i class="bootstrap-icon fab fa-bootstrap fa-2x"></i>
+            </div>
+          </div>
+
+          <div className="slider">
+            <div className="slider-media">
+              <img src="./assets/img/car.jpg" alt="Home decoration" />
+              <div className="img-overlay">
+                <a href="https://2050.no" target="_blank" rel="noopener noreferrer" className="visit-btn">
+                  Enter the page
+                </a>
               </div>
-              <div class="title">
-                <i class="html-icon fab fa-html5 fa-2x"></i>
-                <i class="css-icon fab fa-css3-alt fa-2x"></i>
-                <i class="sass-icon fab fa-sass fa-2x"></i>
-                <i class="js-icon fab fa-js fa-2x"></i>
-                <i class="bootstrap-icon fab fa-bootstrap fa-2x"></i>
+            </div>
+            <div className="slider-details">
+              <h4>2050 Trafikkskole</h4>
+            </div>
+            <div className="title">
+              <i className="html-icon fab fa-html5 fa-2x"></i>
+              <i className="css-icon fab fa-css3-alt fa-2x"></i>
+              <i className="wix-icon fab fa-wix fa-2x"></i>
+            </div>
+          </div>
+
+          <div className="slider">
+            <div className="slider-media">
+              <img src="./assets/img/happy tails.jpg" alt="Happy Tails" />
+              <div className="img-overlay">
+                <a href="https://www.dropbox.com/s/8thcu0u6sx2gvek/Happy%20Tails%20app.pdf?dl=1" target="_blank" rel="noopener noreferrer" className="visit-btn">
+                  Download PDF
+                </a>
+              </div>
+            </div>
+            <div className="slider-details">
+              <h4>Happy Tails App Poster</h4>
+            </div>
+            <div className="title">
+              <div className="text-icons">
+                <h3 id="ps">Ps</h3>
+                <h3 id="ai">Ai</h3>
               </div>
             </div>
           </div>
-          <div>
-            <div className="slider">
-              <div className="slider-media">
-                <img src="./assets/img/car.jpg" alt="Home decoration" />
-                <div className="img-overlay">
-                  <a href="https://2050.no" target="_blank" rel="noopener noreferrer" className="visit-btn">
-                    Enter the page
-                  </a>
-                </div>
-              </div>
-              <div className="slider-details">
-                <h4>2050 Trafikkskole</h4>
-              </div>
-              <div className="title">
-                <i className="html-icon fab fa-html5 fa-2x"></i>
-                <i className="css-icon fab fa-css3-alt fa-2x"></i>
-                <i className="wix-icon fab fa-wix fa-2x"></i>
+
+          <div className="slider">
+            <div className="slider-media">
+              <img src="./assets/img/holidaze.jpg" alt="Home decoration" />
+              <div className="img-overlay">
+                <a href="https://holidaze-bergen-project-2.netlify.app/" className="visit-btn">
+                  Open Project
+                </a>
               </div>
             </div>
-          </div>
-          <div>
-            <div className="slider">
-              <div className="slider-media">
-                <img src="./assets/img/happy tails.jpg" alt="Happy Tails" />
-                <div className="img-overlay">
-                  <a href="https://www.dropbox.com/s/8thcu0u6sx2gvek/Happy%20Tails%20app.pdf?dl=1" target="_blank" rel="noopener noreferrer" className="visit-btn">
-                    Download PDF
-                  </a>
-                </div>
-              </div>
-              <div className="slider-details">
-                <h4>Happy Tails App Poster</h4>
-              </div>
-              <div className="title">
-                <div className="text-icons">
-                  <h3 id="ps">Ps</h3>
-                  <h3 id="ai">Ai</h3>
-                </div>
-              </div>
+            <div className="slider-details">
+              <h4>Holidaze Bergen</h4>
             </div>
-          </div>
-          <div>
-            {" "}
-            <div className="slider">
-              <div className="slider-media">
-                <img src="./assets/img/holidaze.jpg" alt="Home decoration" />
-                <div className="img-overlay">
-                  <a href="https://holidaze-bergen-project-2.netlify.app/" className="visit-btn">
-                    Open Project
-                  </a>
-                </div>
-              </div>
-              <div className="slider-details">
-                <h4>Holidaze Bergen</h4>
-              </div>
-              <div className="title">
-                <i className="html-icon fab fa-react fa-2x"></i>
-                <i className="css-icon fab fa-node-js fa-2x"></i>
-                <i className="js-icon fab fa-github fa-2x"></i>
-                <i className="sass-icon fab fa-aws fa-2x"></i>
-              </div>
+            <div className="title">
+              <i className="html-icon fab fa-react fa-2x"></i>
+              <i className="css-icon fab fa-node-js fa-2x"></i>
+              <i className="js-icon fab fa-github fa-2x"></i>
+              <i className="sass-icon fab fa-aws fa-2x"></i>
             </div>
           </div>
         </Carousel>

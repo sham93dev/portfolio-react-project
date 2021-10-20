@@ -48,9 +48,17 @@
 }
 
 // Cards Slider
-
+.carousel-container {
+  .react-multiple-carousel__arrow--left {
+    left: 1%;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: 1%;
+  }
+}
 .slider {
   width: 300px;
+  margin: 0 auto;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;

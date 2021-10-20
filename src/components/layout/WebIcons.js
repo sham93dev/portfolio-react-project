@@ -1,10 +1,10 @@
 import React from "react";
 import { FaHtml5, FaCss3, FaReact, FaSass, FaBootstrap, FaGithub, FaHotjar } from "react-icons/fa";
-import { SiJavascript, SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiWix, SiWordpress, SiShopify, SiFilezilla, SiMamp } from "react-icons/si";
+import { SiJavascript, SiAdobephotoshop, SiVisualstudio, SiAdobeillustrator, SiAdobexd, SiWix, SiWordpress, SiShopify, SiFilezilla, SiMamp, SiStrapi } from "react-icons/si";
 
 function WebIcons() {
   return (
-    <div className=" ">
+    <div className="web-icons-wrapper">
       <FaHtml5 id="html5" />
       <FaCss3 />
       <SiJavascript id="java" />
@@ -21,6 +21,8 @@ function WebIcons() {
       <SiMamp id="mymamp" />
       <SiShopify id="myshopify" />
       <SiFilezilla id="hotjar" />
+      <SiStrapi id="strapi" />
+      <SiVisualstudio id="studiocode" />
     </div>
   );
 }

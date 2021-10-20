@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 78vh;
+  height: 87vh;
   background-color: $background;
 }
 
@@ -33,32 +33,30 @@
   font-size: 35px;
 }
 .information p {
-  margin-top: 20px;
-  font-size: 27px;
+  font-size: 1.3rem;
   font-family: $font-primary;
 }
 
 .information h1 {
   font-family: $font-primary;
   text-transform: uppercase;
-  font-size: 56px !important;
+  font-size: 3.5rem !important;
   letter-spacing: 2px;
   color: $black;
   margin-bottom: -4px;
 }
 
 .information h2 {
-  font-size: 21px !important;
+  font-size: 1.5rem !important;
   font-family: $font-primary;
   color: $black;
-  padding-bottom: 10px;
 }
 
 .portrait-pic {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-color: grey;
-  flex-basis: 40%;
+  flex-basis: 44%;
 }
 
 // Shape Devider
@@ -70,7 +68,7 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  outline: black;
+  outline: #ffffff;
 }
 
 .custom-shape-divider-bottom-1611286464 svg {
@@ -81,7 +79,7 @@
 }
 
 .custom-shape-divider-bottom-1611286464 .shape-fill {
-  fill: $black;
+  fill: #ffffff;
 }
 
 // Services section
@@ -171,7 +169,7 @@
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  font-size: 40px;
+  font-size: 4rem;
   font-family: $font-secondary;
   text-transform: uppercase;
   font-weight: bold;
@@ -310,8 +308,8 @@ input[type="text"] {
 
 .multi-section-wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  min-height: 80vh;
+  flex-direction: row;
+  min-height: 95vh;
 }
 
 .about-section {
@@ -319,14 +317,10 @@ input[type="text"] {
   min-height: 50vh;
   flex: 1;
   background-repeat: no-repeat;
-  background-size: contain !important;
+  background-size: 50%;
   background-attachment: fixed;
-}
-
-.about-section-media {
-  background-color: $blue;
-
-  flex: 1;
+  height: auto;
+  width: auto;
 }
 
 .react-multi-carousel-track {
@@ -345,7 +339,7 @@ ul.react-multi-carousel-dot-list {
 }
 
 .react-multi-carousel-list {
-  min-height: 70vh !important;
+  min-height: 90vh !important;
 }
 
 .carousel-item-padding-40-px {
@@ -356,7 +350,7 @@ ul.react-multi-carousel-dot-list {
 .clients-section {
   display: flex;
   flex-direction: column;
-  position: relative;
+  min-height: 70vh;
 }
 
 .clients-section h3 {
@@ -375,8 +369,7 @@ ul.react-multi-carousel-dot-list {
   background-color: $orange;
   height: 140px;
   width: 60%;
-  position: absolute;
-  top: 83%;
+  margin: -58px;
   bottom: 0;
   z-index: -2;
 }
@@ -387,11 +380,9 @@ ul.react-multi-carousel-dot-list {
   flex-direction: column;
   align-items: center;
   background-color: $black;
-  height: 500px;
-  width: 96%;
-  margin: 40px;
+  height: 800px;
+  width: 100%;
   z-index: -1;
-  position: absolute;
   top: 98%;
 }
 
@@ -401,4 +392,49 @@ ul.react-multi-carousel-dot-list {
 }
 
 .clients-images {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.clients-images img {
+  height: 174px;
+}
+
+// education section
+
+.education-pictures {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+.education-pictures img {
+  height: 100%;
+  width: 200px;
+  padding: 25px;
+}
+
+.bi-wrapper,
+.noroff-wrapper,
+.eidsvoll-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.about-section-media h2 {
+  margin-left: 13%;
+  margin-top: 80px;
+  font-size: 7rem;
+  color: $white;
+  font-family: $font-secondary;
+}
+
+.education-pictures h3 {
+  color: $black;
+}
+
+.about-section-media {
+  margin-top: -93px;
+  background-color: $blue;
+  flex: 1;
 }
