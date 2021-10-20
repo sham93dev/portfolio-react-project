@@ -24,7 +24,7 @@ function HeroBanner() {
             </div>
           </div>
         </div>
-        <div style={{ backgroundImage: "url(/assets/img/shamil28.jpg)" }} className="portrait-pic"></div>
+        <div style={{ backgroundImage: "url(https://babuevs.no/shamil28.JPG)" }} className="portrait-pic"></div>
       </div>
     </>
   );
