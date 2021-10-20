@@ -6,50 +6,58 @@
 
   // Introduction
 
-  .presentation {
-    flex: 0;
-    position: relative;
-  }
-
   .wrapper {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: center;
-    height: 414px;
     position: relative;
+    height: 51vh;
   }
 
   .portrait-pic {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.413) 30%, rgba(247, 242, 234, 0.05) 100%), url(http://www.babuevs.no/portfolio/media/img/shamil10.jpg);
-    background-size: cover;
+    background-size: 100% !important;
     flex: 1;
+    position: relative;
+  }
+
+  .presentation {
+    flex: 0;
+    position: absolute;
+    top: 334px;
+    left: -116px;
+    right: 0px;
+    z-index: 1;
+  }
+
+  .web-icons {
+    font-size: 15px !important;
+  }
+
+  .web-icons-wrapper {
+    display: flex;
+    grid-gap: 5px;
   }
 
   .information h1 {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     color: $black;
   }
 
   .information p {
-    font-family: $font-secondary;
-    font-size: 0.6rem !important;
-    color: $black;
+    display: none;
   }
 
   .information h2 {
-    font-size: 0.8rem !important;
-    color: $orange;
+    margin-top: 2px;
+    font-size: 0.9rem !important;
+    color: $black;
   }
 
   .information {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: absolute;
-    border-radius: 20px;
-    top: 340px;
-    bottom: 0;
-    right: 85px;
-    left: -129px;
   }
 
   .web-icons {
@@ -76,13 +84,13 @@
   }
 
   .header h2 {
-    color: $black;
+    color: $white;
     font-family: $font-secondary;
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   .services {
-    background-color: #e9ecef;
+    background-color: $black;
     display: flex;
     min-height: 10vh;
   }
@@ -100,7 +108,7 @@
   }
   .service-icons h4 {
     font-size: 8px;
-    color: $black;
+    color: $white;
   }
 
   .dot {
@@ -115,27 +123,36 @@
     margin-bottom: 70px;
   }
   .description p {
-    color: $black;
+    color: $white;
     font-size: 14px;
     margin-bottom: 0px;
   }
 
   // Clients
 
+  .clients-section {
+    margin-top: 56px;
+    min-height: 39vh;
+  }
+
   .clients-section h3 {
-    font-size: 1.3rem;
+    font-size: 3rem;
     margin-top: 1px;
     margin-left: 8px;
     font-family: "Poppins", sans-serif;
   }
 
   .clients-section h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-left: 8px;
   }
 
   .clients-small-box {
     height: 114px;
+    width: 96%;
+    margin-top: -39px;
+    margin: -40px;
+    margin-bottom: -80px;
   }
 
   .clients-big-box {
@@ -151,7 +168,7 @@
   }
 
   .clients-images img {
-    height: 51px;
+    height: 59px;
   }
 
   #hide {
@@ -164,16 +181,16 @@
   }
 
   .contact-btn {
-    border: 1px solid $orange;
-    background-color: transparent;
+    background-color: $black;
     text-transform: uppercase;
     font-family: $font-secondary;
     font-size: 13px;
     padding: 2px;
     height: 33px;
+    margin-top: 14px;
 
     &:hover {
-      background-color: rgba($orange, $alpha: 0.1);
+      color: $orange;
     }
   }
 
@@ -198,7 +215,7 @@
   }
 
   .projects-text h2 {
-    font-size: 23px;
+    font-size: 2.5rem;
     font-family: $font-secondary;
     padding: 8px;
     margin: 30px;
@@ -207,6 +224,7 @@
   .slider {
     display: grid;
     height: auto;
+    width: 222px !important;
   }
 
   .custom-shape-divider-bottom-1611286464 svg {
@@ -216,9 +234,20 @@
     height: 77px;
   }
 
+  .react-multi-carousel-list {
+    display: flex;
+    align-items: flex-start !important;
+    overflow: hidden;
+    position: relative;
+  }
+
   .projects-wrapper img {
     height: 200px !important;
     width: 100% !important;
+  }
+
+  .react-multi-carousel-list {
+    min-height: 62vh !important;
   }
 
   .img-overlay {
@@ -289,7 +318,7 @@
   }
 
   .container {
-    margin-top: -150px;
+    margin-top: -28px;
   }
   .container p {
     font-size: 2vh !important;
@@ -336,6 +365,37 @@
 
   .switch {
     display: none;
+  }
+
+  .multi-section-wrapper {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .about-section {
+    flex: 1;
+    background-size: 100%;
+    background-attachment: local;
+    min-height: 71vh;
+  }
+
+  .about-section-media {
+    flex: 1;
+  }
+  .about-section-media h2 {
+    font-size: 5rem;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .education-pictures {
+    margin: 14px;
+  }
+
+  // Footer
+  .social-media-icons {
+    width: 81% !important;
+    font-size: 29px !important;
   }
 }
 
