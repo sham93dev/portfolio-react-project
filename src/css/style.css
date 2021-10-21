@@ -38,6 +38,7 @@
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   max-width: 93%;
+  margin-top: 10px;
 }
 
 .information h1 {
@@ -357,7 +358,7 @@ ul.react-multi-carousel-dot-list {
 .clients-small-box {
   background-color: #fab600;
   height: 140px;
-  width: 60%;
+  width: 86%;
   margin: -58px;
   bottom: 0;
   z-index: -2;
@@ -844,6 +845,7 @@ a:hover {
 
 .web-icons {
   font-size: 34px;
+  margin-top: 20px;
   justify-content: space-between;
   gap: 20% !important;
 }
@@ -1388,7 +1390,7 @@ footer p {
 }
 
 .slider {
-  width: 300px;
+  width: 262px;
   margin: 0 auto;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -1397,7 +1399,7 @@ footer p {
 }
 
 .slider-media {
-  height: 450px;
+  height: 395px;
 }
 
 .slider-media img {
