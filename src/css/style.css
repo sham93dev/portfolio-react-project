@@ -165,7 +165,7 @@
 .projects-text h2 {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  padding-top: 61px;
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -1314,7 +1314,7 @@ footer p {
   }
 }
 
-@media only screen and (ma-width: 1400px) {
+@media only screen and (min-width: 1700px) {
   .projects-wrapper {
     justify-content: center;
     align-items: center;
@@ -1331,10 +1331,10 @@ footer p {
     margin: 47px !important;
   }
   .slider {
-    width: 300px !important;
+    width: 355px !important;
   }
   .slider-media {
-    height: 305px !important;
+    height: 490px !important;
   }
 }
 

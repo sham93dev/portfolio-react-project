@@ -48,7 +48,7 @@ function Projects() {
             <div className="slider-media">
               <img src="./assets/img/holidaze.jpg" alt="Home decoration" />
               <div className="img-overlay">
-                <a href="https://holidaze-bergen-project-2.netlify.app/" className="visit-btn">
+                <a href="https://holidaze-bergen-project-2.netlify.app/" target="_blank" rel="noopener noreferrer" className="visit-btn">
                   Open Project
                 </a>
               </div>
