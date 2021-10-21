@@ -1314,7 +1314,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media only screen and (ma-width: 1400px) {
   .projects-wrapper {
     justify-content: center;
     align-items: center;
@@ -1329,6 +1329,12 @@ footer p {
   }
   .react-multi-carousel-dot-list {
     margin: 47px !important;
+  }
+  .slider {
+    width: 300px !important;
+  }
+  .slider-media {
+    height: 305px !important;
   }
 }
 
