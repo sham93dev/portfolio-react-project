@@ -1,4 +1,44 @@
 // Smaller Screen
+
+// XS Screens
+
+@media screen and (max-width: 499px) {
+  .presentation {
+    flex: 0 1;
+    position: absolute;
+    top: 255px !important;
+    left: -128px !important;
+    right: 0;
+    z-index: 1;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 3%;
+    gap: 3%;
+    width: 25% !important;
+  }
+
+  .contact-btn {
+    background-color: #262626;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px !important;
+    padding: 1px !important;
+    height: 23px !important;
+    margin-top: 11px !important;
+  }
+
+  .information h2 {
+    font-size: 0.4rem !important;
+  }
+
+  .web-icons {
+    font-size: 12px !important;
+  }
+}
+
 @media screen and (max-width: 750px) {
   body {
     background-color: $background;

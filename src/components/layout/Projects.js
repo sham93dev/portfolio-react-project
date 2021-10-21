@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+    items: 5,
     slidesToSlide: 3, // optional, default to 1.
   },
   tablet: {
@@ -44,24 +44,23 @@ function Projects() {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           dotListClass="custom-dot-list-style"
         >
-          <div class="slider">
-            <div class="slider-media">
-              <img src="./assets/img/kitchen.jpeg" alt="Kurban`s Kitchen" />
-              <div class="img-overlay">
-                <a href="https://babuevs.no/kitchen/index.html" target="_blank" rel="noopener noreferrer" class="visit-btn">
-                  Enter the page
+          <div className="slider">
+            <div className="slider-media">
+              <img src="./assets/img/holidaze.jpg" alt="Home decoration" />
+              <div className="img-overlay">
+                <a href="https://holidaze-bergen-project-2.netlify.app/" className="visit-btn">
+                  Open Project
                 </a>
               </div>
             </div>
-            <div class="slider-details">
-              <h4>Kurban`s Kitchen</h4>
+            <div className="slider-details">
+              <h4>Holidaze Bergen</h4>
             </div>
-            <div class="title">
-              <i class="html-icon fab fa-html5 fa-2x"></i>
-              <i class="css-icon fab fa-css3-alt fa-2x"></i>
-              <i class="sass-icon fab fa-sass fa-2x"></i>
-              <i class="js-icon fab fa-js fa-2x"></i>
-              <i class="bootstrap-icon fab fa-bootstrap fa-2x"></i>
+            <div className="title">
+              <i className="html-icon fab fa-react fa-2x"></i>
+              <i className="css-icon fab fa-node-js fa-2x"></i>
+              <i className="js-icon fab fa-github fa-2x"></i>
+              <i className="sass-icon fab fa-aws fa-2x"></i>
             </div>
           </div>
 
@@ -104,23 +103,43 @@ function Projects() {
             </div>
           </div>
 
-          <div className="slider">
-            <div className="slider-media">
-              <img src="./assets/img/holidaze.jpg" alt="Home decoration" />
-              <div className="img-overlay">
-                <a href="https://holidaze-bergen-project-2.netlify.app/" className="visit-btn">
-                  Open Project
+          <div class="slider">
+            <div class="slider-media">
+              <img src="./assets/img/homedecor2.jpg" alt="Kurban`s Kitchen" />
+              <div class="img-overlay">
+                <a href="https://babuevs.no/interior/index.html" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                  Enter the page
                 </a>
               </div>
             </div>
-            <div className="slider-details">
-              <h4>Holidaze Bergen</h4>
+            <div class="slider-details">
+              <h4>Home Decor</h4>
             </div>
-            <div className="title">
-              <i className="html-icon fab fa-react fa-2x"></i>
-              <i className="css-icon fab fa-node-js fa-2x"></i>
-              <i className="js-icon fab fa-github fa-2x"></i>
-              <i className="sass-icon fab fa-aws fa-2x"></i>
+            <div class="title">
+              <i class="html-icon fab fa-html5 fa-2x"></i>
+              <i class="css-icon fab fa-css3-alt fa-2x"></i>
+              <i class="sass-icon fab fa-sass fa-2x"></i>
+              <i class="bootstrap-icon fab fa-bootstrap fa-2x"></i>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider-media">
+              <img src="./assets/img/kitchen.jpeg" alt="Kurban`s Kitchen" />
+              <div class="img-overlay">
+                <a href="https://babuevs.no/kitchen/index.html" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                  Enter the page
+                </a>
+              </div>
+            </div>
+            <div class="slider-details">
+              <h4>Kurban`s Kitchen</h4>
+            </div>
+            <div class="title">
+              <i class="html-icon fab fa-html5 fa-2x"></i>
+              <i class="css-icon fab fa-css3-alt fa-2x"></i>
+              <i class="sass-icon fab fa-sass fa-2x"></i>
+              <i class="js-icon fab fa-js fa-2x"></i>
+              <i class="bootstrap-icon fab fa-bootstrap fa-2x"></i>
             </div>
           </div>
         </Carousel>

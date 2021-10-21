@@ -37,6 +37,7 @@
 .information p {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
+  max-width: 93%;
 }
 
 .information h1 {
@@ -424,6 +425,19 @@ ul.react-multi-carousel-dot-list {
   margin-top: -93px;
   background-color: #119abf;
   flex: 1;
+}
+
+footer a {
+  display: flex;
+  color: #119abf;
+}
+
+footer a:hover {
+  color: #262626;
+}
+
+footer *:hover {
+  color: #262626;
 }
 
 .skills {
@@ -905,51 +919,93 @@ footer p {
   color: #262626;
 }
 
+@media screen and (max-width: 499px) {
+  .presentation {
+    flex: 0 1;
+    position: absolute;
+    top: 255px !important;
+    left: -128px !important;
+    right: 0;
+    z-index: 1;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 3%;
+    gap: 3%;
+    width: 25% !important;
+  }
+  .contact-btn {
+    background-color: #262626;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px !important;
+    padding: 1px !important;
+    height: 23px !important;
+    margin-top: 11px !important;
+  }
+  .information h2 {
+    font-size: 0.4rem !important;
+  }
+  .web-icons {
+    font-size: 12px !important;
+  }
+}
+
 @media screen and (max-width: 750px) {
   body {
     background-color: #e9ecef;
   }
-  .presentation {
-    flex: 0;
-  }
   .wrapper {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: center;
-    height: 500px;
     position: relative;
+    height: 51vh;
   }
   .portrait-pic {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.413) 30%, rgba(247, 242, 234, 0.05) 100%), url(http://www.babuevs.no/portfolio/media/img/shamil10.jpg);
-    background-size: cover;
+    background-size: 100% !important;
     flex: 1;
+    position: relative;
+  }
+  .presentation {
+    flex: 0;
+    position: absolute;
+    top: 334px;
+    left: -116px;
+    right: 0px;
+    z-index: 1;
+  }
+  .web-icons {
+    font-size: 15px !important;
+  }
+  .web-icons-wrapper {
+    display: flex;
+    grid-gap: 5px;
   }
   .information h1 {
-    font-size: 15px;
-    color: #efefef;
-  }
-  .information p:nth-child(1) {
-    display: none;
+    font-size: 2rem !important;
+    color: #262626;
   }
   .information p {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    color: #efefef;
+    display: none;
   }
   .information h2 {
-    margin-top: -5px;
-    font-size: 11px;
-    color: #fab600;
+    margin-top: 2px;
+    font-size: 0.9rem !important;
+    color: #262626;
   }
   .information {
-    padding: 30px;
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: absolute;
-    border-radius: 20px;
-    top: 15%;
-    right: 20%;
+  }
+  .web-icons {
+    font-size: 9px;
+  }
+  .portfolio-btn {
+    display: none;
   }
   #hide5 {
     display: none;
@@ -962,12 +1018,12 @@ footer p {
     margin-top: 70px;
   }
   .header h2 {
-    color: #262626;
+    color: #efefef;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
   }
   .services {
-    background-color: #e9ecef;
+    background-color: #262626;
     display: flex;
     min-height: 10vh;
   }
@@ -983,7 +1039,7 @@ footer p {
   }
   .service-icons h4 {
     font-size: 8px;
-    color: #262626;
+    color: #efefef;
   }
   .dot {
     display: none;
@@ -996,9 +1052,44 @@ footer p {
     margin-bottom: 70px;
   }
   .description p {
-    color: #262626;
+    color: #efefef;
     font-size: 14px;
     margin-bottom: 0px;
+  }
+  .clients-section {
+    margin-top: 56px;
+    min-height: 39vh;
+  }
+  .clients-section h3 {
+    font-size: 3rem;
+    margin-top: 1px;
+    margin-left: 8px;
+    font-family: "Poppins", sans-serif;
+  }
+  .clients-section h2 {
+    font-size: 4rem;
+    margin-left: 8px;
+  }
+  .clients-small-box {
+    height: 114px;
+    width: 96%;
+    margin-top: -39px;
+    margin: -40px;
+    margin-bottom: -80px;
+  }
+  .clients-big-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+    height: 246px;
+    width: 100%;
+    z-index: -1;
+    top: 98%;
+  }
+  .clients-images img {
+    height: 59px;
   }
   #hide {
     display: none;
@@ -1007,16 +1098,16 @@ footer p {
     display: none;
   }
   .contact-btn {
-    border: 1px solid #fab600;
-    background-color: transparent;
+    background-color: #262626;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     padding: 2px;
     height: 33px;
+    margin-top: 14px;
   }
   .contact-btn:hover {
-    background-color: rgba(250, 182, 0, 0.1);
+    color: #fab600;
   }
   .projects {
     display: grid;
@@ -1035,7 +1126,7 @@ footer p {
     margin-top: 10px;
   }
   .projects-text h2 {
-    font-size: 23px;
+    font-size: 2.5rem;
     font-family: "Poppins", sans-serif;
     padding: 8px;
     margin: 30px;
@@ -1043,10 +1134,26 @@ footer p {
   .slider {
     display: grid;
     height: auto;
+    width: 222px !important;
+  }
+  .custom-shape-divider-bottom-1611286464 svg {
+    position: relative;
+    display: block;
+    width: calc(185% + 1.3px);
+    height: 77px;
+  }
+  .react-multi-carousel-list {
+    display: flex;
+    align-items: flex-start !important;
+    overflow: hidden;
+    position: relative;
   }
   .projects-wrapper img {
     height: 200px !important;
     width: 100% !important;
+  }
+  .react-multi-carousel-list {
+    min-height: 62vh !important;
   }
   .img-overlay {
     display: flex;
@@ -1103,7 +1210,7 @@ footer p {
     flex-direction: column;
   }
   .container {
-    margin-top: -150px;
+    margin-top: -28px;
   }
   .container p {
     font-size: 2vh !important;
@@ -1113,56 +1220,9 @@ footer p {
     justify-content: center;
     grid-template-rows: 1fr;
   }
-  .apps {
-    font-size: 10px !important;
-    gap: 20px;
-  }
-  .apps img {
-    height: 60px;
-    padding: 12px;
-  }
   .contact {
     display: flex;
     flex-direction: column;
-  }
-  .ranked,
-  .fa-star {
-    font-size: 6px;
-    margin-top: 20px;
-  }
-  .about-me {
-    background-color: #119abf;
-    padding-bottom: 90px;
-  }
-  .about-me img {
-    padding: 20px;
-  }
-  .about-me p {
-    font-size: 17px;
-    margin: 20px;
-    text-align: center;
-    color: #efefef;
-  }
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-  }
-  .contact-form h2 {
-    font-size: 20px;
-  }
-  .input-box {
-    height: 20%;
-  }
-  .input-box span {
-    margin-left: 10px !important;
-    height: 20%;
-    font-size: 12px !important;
-    align-items: center;
-  }
-  input[type="text"] {
-    height: 34px;
   }
   .footer {
     background-color: #262626;
@@ -1184,19 +1244,36 @@ footer p {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
   }
-  #submit-btn {
-    width: 100px;
-    padding: 10px;
-    font-size: 13px;
-  }
-  .rankings {
-    margin-top: 8px;
-  }
   .custom-shape-divider-bottom-1611286464 .shape-fill {
     fill: #e9ecef !important;
   }
   .switch {
     display: none;
+  }
+  .multi-section-wrapper {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .about-section {
+    flex: 1;
+    background-size: 100%;
+    background-attachment: local;
+    min-height: 71vh;
+  }
+  .about-section-media {
+    flex: 1;
+  }
+  .about-section-media h2 {
+    font-size: 5rem;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .education-pictures {
+    margin: 14px;
+  }
+  .social-media-icons {
+    width: 81% !important;
+    font-size: 29px !important;
   }
 }
 
@@ -1248,6 +1325,9 @@ footer p {
     align-items: center;
     overflow: hidden;
   }
+  .react-multi-carousel-dot-list {
+    margin: 47px !important;
+  }
 }
 
 .container {
@@ -1271,7 +1351,7 @@ footer p {
 
 .container p span.animated-blinker {
   display: inline-block;
-  background-color: black;
+  background-color: white;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
